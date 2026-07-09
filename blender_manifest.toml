@@ -1,0 +1,32 @@
+schema_version = "1.0.0"
+
+id = "blendertechartkit"
+version = "0.1.0"
+name = "Blender TechArt Kit"
+tagline = "FBX export (UE-ready), mesh checker overlay and texel density"
+maintainer = "Jose Miguel Casas Pagan <josemcasasp@gmail.com>"
+type = "add-on"
+
+# Portable, no external services, no Perforce.
+blender_version_min = "4.2.0"
+
+# GPL: mesh_check (Legigan Jeremy / Pistiwique) and texel_density are GPL-derived.
+license = ["SPDX:GPL-2.0-or-later"]
+
+tags = ["Mesh", "Pipeline", "UV"]
+
+# tdcore.dll (Windows) and libtdcore.so (Linux) are bundled as data.
+# The tool falls back to a pure-Python backend when the native lib is absent,
+# so we do not restrict platforms here.
+
+[build]
+# Keep repo/publishing/dev files out of the shipped .zip.
+paths_exclude_pattern = [
+    "__pycache__/",
+    "/.git/",
+    "/docs/",
+    "/dist/",
+    "/tests/",
+    "*.ps1",
+    "/README.md",
+]
