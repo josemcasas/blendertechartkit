@@ -7,7 +7,7 @@
       "id": "blendertechartkit",
       "name": "Blender TechArt Kit",
       "tagline": "FBX export (UE-ready), mesh checker overlay and texel density",
-      "version": "0.3.0",
+      "version": "0.3.1",
       "type": "add-on",
       "maintainer": "Jose Miguel Casas Pagan <josemcasasp@gmail.com>",
       "license": [
@@ -19,9 +19,9 @@
         "Pipeline",
         "UV"
       ],
-      "archive_url": "./blendertechartkit-0.3.0.zip",
-      "archive_size": 34034,
-      "archive_hash": "sha256:d358586f51e9fdd62212ce2c41abeafbdc3cd0afe33e7ce52ababa8bfa614db5"
+      "archive_url": "./blendertechartkit-0.3.1.zip",
+      "archive_size": 34851,
+      "archive_hash": "sha256:1b9f88a1c697dbc516cabcea96d2e2a32b33f023884e3fc2bfaa9102cc94b2a3"
     }
   ]
 }
